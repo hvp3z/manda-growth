@@ -2,8 +2,8 @@
 date: 2026-07-28
 agent: growth-marketer
 type: post-linkedin
-statut: pending
-verdict: ""
+statut: approved
+verdict: "Matthieu 2026-07-28 (via session Axiom) — good, publier tel quel. Palier draft-review non libéré : publication par Matthieu (compteur libération : 1/10 approved sans correction)."
 ---
 
 **Visuel** : `content-factory/output/mineral-v1/a1.png` — Eli (navy #2C4A7C), fond sable, timeline J+7 → J+15 → J+30, headline « Vos impayés ne le resteront plus. » (QA-validé v1.1, hors visuels Leo).
