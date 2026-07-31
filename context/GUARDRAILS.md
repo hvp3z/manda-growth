@@ -1,7 +1,7 @@
 ---
 type: dérivé
-sources: sidecar Axiom (décisions #29/#46/#21, ADR-064/068/082) · CNIL B2B · positioning-intel.md
-sync: 2026-07-28
+sources: sidecar Axiom (décisions #29/#46/#21, ADR-064/068/082/085) · CNIL B2B · positioning-intel.md
+sync: 2026-07-31
 règle: ne modifier que via playbooks/resync-context.md
 ---
 
@@ -9,10 +9,10 @@ règle: ne modifier que via playbooks/resync-context.md
 
 Un livrable qui viole une de ces règles est **invalide**, même s'il est excellent. En cas de doute : review-queue, pas d'envoi.
 
-## G1 — #29 : l'onboarding email est CASSÉ (temporaire)
+## G1 — #29 : l'onboarding email n'est pas encore OUVERT (temporaire)
 
-Tant que l'app Google/Nylas n'est pas approuvée en production, un prospect qui connecte sa boîte voit un écran « phishing ». Donc :
-- **Aucun CTA « connectez votre boîte » / « démarrez l'essai » dans l'outbound.** CTA autorisés : RDV découverte 15 min · inscription waitlist Fondateur.
+**Changement de statut (resync 2026-07-31, CP-115 validé)** : la porte email **fonctionne** techniquement de bout en bout — l'écran « phishing » est levé depuis le 2026-07-22, le bug d'activation de la cible n°1 (dirigeant PME/artisan) et la reconnexion de boîte sont corrigés et prouvés (CP-115). Ce qui reste : un bandeau Google « application non vérifiée » (CASA en cours, fenêtre ≤100 comptes) et l'ouverture réservée à la cohorte Fondateur au lancement. Donc la règle opérationnelle NE CHANGE PAS :
+- **Aucun CTA « connectez votre boîte » / « démarrez l'essai » dans l'outbound** tant qu'Axiom n'a pas déclaré le lancement ouvert. CTA autorisés : RDV découverte 15 min · inscription waitlist Fondateur.
 - Aucun média payant (déjà acté 2026-07-12).
 
 ## G2 — #46 : Leo n'existe pas commercialement
@@ -33,6 +33,7 @@ NON mentionnables : import Google Sheets (retiré, ADR-062 amendé) · Instagram
 - **Niveau 1 (stockage)** : « Vos données sont stockées en Europe, sur nos serveurs. »
 - **Niveau 2 (traitement LLM)** : « Le traitement IA est soumis à un DPA EU, sans entraînement ni stockage de vos contenus. »
 - Interdit : « vos données restent en Europe » tout court, ou tout message qui mélange les deux niveaux.
+- ⚠️ **Migration vers une IA française (Mistral) : GRAVÉE (ADR-085, 2026-07-31) mais NON LIVRÉE.** Tant que cette ligne n'est pas levée par un resync Axiom : aucun claim « IA française », « IA européenne », « souveraineté », « vos données ne quittent pas l'Europe ». Les deux niveaux ci-dessus restent le maximum autorisé.
 
 ## G6 — Cold email B2B (CNIL + deliverability)
 
