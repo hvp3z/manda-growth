@@ -2,6 +2,7 @@
 
 > Format : `AAAA-MM-JJ · agent · action · résultat/lien`. Les agents ajoutent EN HAUT (plus récent en premier).
 
+- 2026-08-24 · axiom · resync-context · OFFER.md (grille ADR-089 : unité 29 / pack 69 / Premium 129, Fondateur packs-only −50 % 12 mois, paliers et « à vie » morts) + GUARDRAILS.md (G2 : Leo nommable comme futur seulement, #46 close · G2bis grille · G3 : #21 close dans le produit, règle inchangée) + ROADMAP_SNAPSHOT.md (#45 clos côté code, non déployé — aucun prix public avant deploy + Stripe LIVE · #63 · #62 kiné suspendu) · raison : CP-117/118/119 validés (dette resync soldée)
 - 2026-07-31 · axiom · resync-context · GUARDRAILS.md (G1 : porte email fonctionnelle, règle CTA inchangée jusqu'au lancement) + ROADMAP_SNAPSHOT.md (Max : prérequis techniques soldés) · raison : CP-115 validé (#55/#56/#48 soldées — activation cible n°1 + reconnexion self-service)
 - 2026-07-28 · axiom · Verdict Matthieu : post lundi `approved` sans correction (1/10 vers libération du palier publication) · à publier par Matthieu, puis déplacer en done/
 - 2026-07-28 · growth-marketer · Signal SIG-001 émis : besoin CP produit page waitlist Fondateur manda.run/fondateur (SOP landing-waitlist §3) · signals/SIG-001-landing-waitlist-fondateur.md

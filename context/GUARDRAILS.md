@@ -1,7 +1,7 @@
 ---
 type: dérivé
-sources: sidecar Axiom (décisions #29/#46/#21, ADR-064/068/082/085) · CNIL B2B · positioning-intel.md
-sync: 2026-07-31
+sources: sidecar Axiom (décisions #29/#46/#21/#63, ADR-064/068/082/085/087/089) · CNIL B2B · positioning-intel.md
+sync: 2026-08-24
 règle: ne modifier que via playbooks/resync-context.md
 ---
 
@@ -15,13 +15,22 @@ Un livrable qui viole une de ces règles est **invalide**, même s'il est excell
 - **Aucun CTA « connectez votre boîte » / « démarrez l'essai » dans l'outbound** tant qu'Axiom n'a pas déclaré le lancement ouvert. CTA autorisés : RDV découverte 15 min · inscription waitlist Fondateur.
 - Aucun média payant (déjà acté 2026-07-12).
 
-## G2 — #46 : Leo n'existe pas commercialement
+## G2 — Leo : #46 close (CP-118), statut CHANGÉ le 2026-08-24
 
-Leo (prospection) ne livre rien avant Leo-Prospection (septembre). **Interdiction absolue de mentionner Leo** dans tout contenu, post, email, page. Les assistants communicables : **Max, Zoé, Eli**.
+**Changement de statut (resync 2026-08-24, CP-118/119 validés)** : le checkout Leo est retiré du produit (#46 soldée par construction) et la page tarif publique nomme Leo comme **futur** (« Bientôt — prospection », « Premium ouvre avec Leo »). La règle passe de « ne jamais mentionner » à :
+- Leo est **nommable uniquement comme futur**, dans les mots de la page (« arrive avec Premium », « bientôt — prospection »). **Jamais** de date, jamais « disponible », jamais de feature Leo décrite comme livrée, jamais Leo en tête d'affiche.
+- Les assistants **vendables** restent **Max, Zoé, Eli** (unité 29 € / pack 69 €). Leo ne livre rien avant Leo-Prospection.
 
-## G3 — #21 : e-facture
+## G2bis — Grille tarifaire (ADR-087/089) — nouvelle règle
 
-Jamais une promesse ni un levier de peur (« conformité assurée » = mensonge : réception 2026 ≠ émission PME 2027). Au plus un rappel de contexte, 1 contenu max — par défaut : ne pas en parler.
+- **Jamais de paliers** (Essentiel/Pro), jamais « prix bloqué à vie », jamais de bundle Max+Zoé ni cash-flow 49 € : tout est mort (voir OFFER).
+- **Fondateur = packs uniquement** (−50 % / 12 mois, 10 places). Écrire « Fondateur sur Max à 9,50 € » est un défaut bloquant.
+- **Jamais de quota chiffré** ni de comparatif avec des ✗ (décision Matthieu 2026-08-21) : « chaque assistant reste complet ».
+- **Jusqu'au deploy CP-119 + bascule Stripe LIVE** (Axiom lèvera cette ligne) : aucun prix dans un contenu public — renvoyer vers `manda.run/pricing`.
+
+## G3 — #21 : e-facture (close dans le produit le 2026-08-24, la règle de discours reste)
+
+Le copy produit ne porte plus aucune promesse de conformité (CP-117 + CP-119 : « conforme 2026 », « Factur-X », « prêt pour l'obligation » sont morts). La règle growth **ne change pas** : jamais une promesse ni un levier de peur (« conformité assurée » = mensonge : réception 2026 ≠ émission PME 2027). Au plus un rappel de contexte, 1 contenu max — par défaut : ne pas en parler.
 
 ## G4 — Périmètre produit réel (zéro promesse fantôme, ADR-072)
 
