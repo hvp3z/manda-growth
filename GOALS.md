@@ -21,3 +21,7 @@ Tant que **#29** (OAuth Google) n'est pas levé : l'objectif intermédiaire est 
 - **30 inscrits waitlist** avant d'ouvrir l'outbound à froid.
 - **#29 levé** → bascule waitlist → activation réelle ; alors seulement, question du média payant.
 - **Leo-Prospection livré** (ou checkout Leo fermé) avant toute campagne payante (#46).
+
+## Format récurrent — vidéo fondateur
+
+**Vidéo fondateur mensuelle** (`playbooks/founder-video.md`) : 1 vidéo par mois calendaire, déclenchée par Matthieu quand le stock `assets/founder/` est prêt (ou par growth-marketer si > 30 jours sans vidéo ET stock déjà disponible). Même circuit de validation que le texte (review-queue → G8).
