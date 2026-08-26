@@ -17,7 +17,7 @@ assets/founder/
 
 ## Dernière session
 
-`dernière session : (aucune pour l'instant — à mettre à jour au premier dépôt de stock par Matthieu)`
+`dernière session : session-2026-08`
 
 ## Vie privée / droit à l'image
 
