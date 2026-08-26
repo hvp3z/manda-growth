@@ -1,7 +1,7 @@
 ---
 type: dérivé
 sources: sidecar Axiom (décisions #29/#46/#21/#63, ADR-064/068/082/085/087/089) · CNIL B2B · positioning-intel.md
-sync: 2026-08-24
+sync: 2026-08-26
 règle: ne modifier que via playbooks/resync-context.md
 ---
 
@@ -26,7 +26,7 @@ Un livrable qui viole une de ces règles est **invalide**, même s'il est excell
 - **Jamais de paliers** (Essentiel/Pro), jamais « prix bloqué à vie », jamais de bundle Max+Zoé ni cash-flow 49 € : tout est mort (voir OFFER).
 - **Fondateur = packs uniquement** (−50 % / 12 mois, 10 places). Écrire « Fondateur sur Max à 9,50 € » est un défaut bloquant.
 - **Jamais de quota chiffré** ni de comparatif avec des ✗ (décision Matthieu 2026-08-21) : « chaque assistant reste complet ».
-- **Jusqu'au deploy CP-119 + bascule Stripe LIVE** (Axiom lèvera cette ligne) : aucun prix dans un contenu public — renvoyer vers `manda.run/pricing`.
+- ~~Jusqu'au deploy CP-119 + bascule Stripe LIVE : aucun prix dans un contenu public~~ → **LEVÉE le 2026-08-26** (grille en prod, Stripe LIVE prouvé de bout en bout). Les prix 29 / 69 / 129 et le Fondateur 34,50 € peuvent être écrits — **uniquement ces montants**, dans les mots d'OFFER.md.
 
 ## G3 — #21 : e-facture (close dans le produit le 2026-08-24, la règle de discours reste)
 
@@ -66,6 +66,10 @@ NON mentionnables : import Google Sheets (retiré, ADR-062 amendé) · Instagram
 | Publication (LinkedIn, SEO, page live) | 🟡 Draft-review | Jamais publier soi-même tant que le palier n'est pas libéré (10 publications validées sans correction) |
 | Envoi cold email | 🔴 Validation obligatoire | Chaque envoi validé par Matthieu (v1) |
 | Pricing, positionnement, roadmap, promesse produit | ⛔ Jamais | Émettre un signal (`signals/`), point final |
+
+## G10 — Vertical garage / carrossier (ADR-090, 2026-08-26) — promesses interdites tant que CP-122/123 ne sont pas livrés
+
+Le garage/carrossier indépendant devient une cible **prioritaire** (voir ICP, déclinaison C). Ce qui est vendable = Eli + Max **existants**. Sont des **défauts bloquants** tant qu'Axiom n'a pas levé cette ligne : « relance automatique de l'expert », « facture à émettre détectée », « réponse automatique aux demandes de devis », « recherche de pièces / de prix », « devis généré », tout chiffre de temps gagné sur le devis. Angle autorisé : *« vos devis et factures suivis et relancés depuis votre boîte mail, sans changer de logiciel »*. Ne jamais citer DARVA/Sidexa/AutoCoreAI/Clotilde. Le paiement/encaissement n'est **jamais** un sujet (Manda ne le voit pas).
 
 ## G9 — Item bloqué
 

@@ -4,7 +4,7 @@
 
 ## North star (Q1 validation marché)
 
-**10 clients pré-payants « Offre Fondateur »** (−50 % à vie sur 12 mois, coupon FONDATEUR, 10 places).
+**10 clients pré-payants « Offre Fondateur »** (−50 % pendant 12 mois — jamais « à vie » —, coupon FONDATEUR, 10 places, packs uniquement — ADR-089). Cibles : comptables + **garages/carrossiers** (ADR-090, 2026-08-26) ; kinés en suspens (#62).
 Tant que **#29** (OAuth Google) n'est pas levé : l'objectif intermédiaire est le **RDV découverte + inscription waitlist Fondateur** — jamais l'activation self-serve.
 
 ## Objectifs hebdomadaires (semaine du 2026-07-28)

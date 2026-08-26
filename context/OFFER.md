@@ -1,13 +1,13 @@
 ---
 type: dérivé
 sources: md-map /pricing (page.tsx + fr.json, état post-CP-119 « Tarifs v2 ») · ADR-087/089 · sidecar Axiom (#45, #63)
-sync: 2026-08-24
+sync: 2026-08-26
 règle: ne modifier que via playbooks/resync-context.md — le prix maître est TOUJOURS la page /pricing (état validé CP-119 ; en prod dès le deploy + bascule Stripe LIVE)
 ---
 
 # OFFER — Ce qui est vendable AUJOURD'HUI
 
-> ⚠️ **Resync 2026-08-24 — la grille a changé (ADR-087/089, CP-117→119 validés).** Les paliers Essentiel/Pro, le « prix bloqué à vie » et le bundle Max+Zoé sont **morts**. La nouvelle page tarif est validée mais **pas encore déployée** (deploy conjoint à la bascule Stripe LIVE, action Matthieu) : jusqu'à ce qu'Axiom lève cette ligne, **aucun prix dans un contenu public** — renvoyer vers `manda.run/pricing`. En RDV / waitlist, c'est la grille ci-dessous qui fait foi.
+> ✅ **Resync 2026-08-26 — la grille est EN PROD et Stripe LIVE est prouvé** (CP-117→119 déployés, 3 prix live, coupon `FONDATEUR`, webhook live posé et souscription test réelle de bout en bout le 26/08, remise à l'état normal). **La ligne « aucun prix public » est levée** : les prix ci-dessous peuvent apparaître dans les contenus, tels quels (jamais d'autres montants — la page `/pricing` fait foi). Les paliers Essentiel/Pro, le « prix bloqué à vie » et le bundle Max+Zoé restent **morts**.
 
 ## Grille (mensuel pur, essai 7 jours, sans engagement, annulable en 1 clic)
 
@@ -34,7 +34,8 @@ règle: ne modifier que via playbooks/resync-context.md — le prix maître est 
 - **Pas de paliers** (Essentiel/Pro), **pas de bundle cash-flow 49 €**, **pas de bundle Max+Zoé** : tout cela n'existe plus.
 - **Pas d'import Google Sheets** — retiré de la v1 (ADR-062 amendé).
 - **Pas d'activation immédiate en outbound** (#29) — CTA = RDV ou waitlist Fondateur, jusqu'à ouverture déclarée par Axiom.
-- ⚠️ **Chemin de paiement** : un 11ᵉ Fondateur ou un coupon sur une unité produit aujourd'hui une erreur brute (#63, correctif à venir). Ne jamais envoyer un prospect « prendre le pack » avant que #63 soit levée — passer par le RDV.
+- ⚠️ **Chemin de paiement** : un 11ᵉ Fondateur ou un coupon sur une unité produit encore une erreur brute (#63 → **CP-120**, à briefer). Ne jamais envoyer un prospect « prendre le pack » en self-serve avant que CP-120 soit validé — passer par le RDV, l'onboarding Fondateur se fait accompagné.
+- 🚗 **Garages / carrossiers (ADR-090, 2026-08-26)** : ce qu'on leur vend **aujourd'hui** = Eli et Max tels qu'ils existent (relances devis/factures N1/N2, tri de la boîte fournisseurs/experts, récap). **Non livré, donc non promis** : relance de l'expert d'assurance (J+2), « facture à émettre », brouillon de réponse aux demandes de devis, recherche de pièces/prix. Ces capacités arrivent avec CP-122/CP-123 — Axiom lèvera cette ligne à leur validation.
 
 ## Mécanique de vente actuelle (mode pré-vente)
 

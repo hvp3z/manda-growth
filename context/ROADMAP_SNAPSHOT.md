@@ -1,7 +1,7 @@
 ---
 type: dérivé
 sources: sidecar Axiom (project-knowledge.md §4/§8, roadmap-backlog.md, ADR-085/087/089)
-sync: 2026-08-24
+sync: 2026-08-26
 règle: resynchronisé par Axiom via playbooks/resync-context.md après chaque session stratégie qui change la donne
 ---
 
@@ -16,8 +16,8 @@ règle: resynchronisé par Axiom via playbooks/resync-context.md après chaque s
 
 ## État du chantier pricing (#45 — clos côté code le 2026-08-24)
 - CP-117 (wording e-facture, Fondateur 12 mois, pages légales) · CP-118 (socle Stripe 29/69/129, modules retirés à la résiliation, Fondateur pack-only) · CP-119 (page tarif « Tarifs v2 ») : **tous validés**.
-- ⚠️ **Pas encore en prod** : deploy conjoint à la bascule Stripe LIVE (prix + coupon côté live + env prod — action Matthieu). Jusqu'à la levée par Axiom : **aucun prix dans un contenu evergreen**, renvoyer vers `manda.run/pricing`.
-- **#63 (High, avant le premier post)** : le chemin de paiement crashe sans message sur toute erreur métier (11ᵉ Fondateur, coupon sur unité). Ne pas pousser « prendre le pack » en direct avant sa levée — passer par le RDV.
+- ✅ **En prod depuis le 26/08** : prix live 29/69/129, coupon `FONDATEUR`, **webhook Stripe live posé et souscription test réelle prouvée de bout en bout** (puis remise à l'état normal). Les prix peuvent être écrits (G2bis levée).
+- **#63 → CP-120 (avant le premier post)** : le chemin de paiement crashe sans message sur toute erreur métier (11ᵉ Fondateur, coupon sur unité, déjà abonné). Ne pas pousser « prendre le pack » en self-serve avant CP-120 — passer par le RDV. **CP-121** (Zoé : onglets Instagram | LinkedIn) suit, même vague.
 
 ## Angle éditorial (décision Axiom 2026-07-31, inchangé)
 - **Tête d'affiche : Eli (impayés) + Zoé (LinkedIn).** Max = porte d'entrée du catalogue, jamais le héros seul. Le pack complet est **l'offre à vendre** ; l'unité sert à entrer.
@@ -28,10 +28,12 @@ règle: resynchronisé par Axiom via playbooks/resync-context.md après chaque s
 - **#29 — App Review Google (CASA Tier 2)** : le lancement ne l'attend plus (décision 2026-07-31) — ouverture possible sous la fenêtre ≤100 comptes (cohorte Fondateur), bandeau « app non vérifiée » assumé. La waitlist reste le réceptacle du trafic jusqu'à nouvel ordre.
 - **Leo-Prospection** : après le deploy pricing et #63 ; prérequis externes #58 (avocat RGPD) et #59 (contrat FullEnrich). Jusqu'à livraison : Leo = futur uniquement (G2).
 - **Migration Mistral — IA française (ADR-085)** : gravée, NON livrée, après Leo-Prospection. Aucun claim « IA française / européenne / vos données ne quittent pas l'Europe » tant qu'Axiom n'a pas levé G5.
-- **#62 — segment kiné (session terrain IDEL 2026-08-24)** : le pattern tiers-payant / canal non-mail rend Max et Eli sans objet chez les IDEL et **probablement chez les kinés** (cible ADR-084). **Aucun investissement growth kiné** avant 1 entretien kiné titulaire (grille H1–H4, sidecar). Comptables non affectés.
+- **#62 — segment kiné** : en suspens (entretien kiné titulaire — Hugo — toujours attendu). **Aucun investissement growth kiné** d'ici là. Comptables non affectés.
+- **Vertical garage/carrosserie — ADR-090 (2026-08-26), PRIORITAIRE** : terrain Davy (carrossier) → la carrosserie sous expertise vit dans la boîte mail. Deux CP après CP-121, **avant Leo-Prospection** : **CP-122** (relance de validation expert J+2 + « facture à émettre » dans le récap) puis **CP-123** (brouillon de réponse aux demandes de devis, tableau dans le mail, pas de PDF). Contrat data pièces (TecAlliance, #64) en attente — la « recherche de prix » n'existe pas et n'est pas promise. Jusqu'à leur validation : **G10** (aucune de ces capacités n'est mentionnable).
+- **Leo-Prospection** : passe **derrière** le chantier garage (décision Matthieu 2026-08-26 : non pressé, bloqué #58/#59).
 
 ## Interdits de promesse (rappel — détail GUARDRAILS)
 Leo disponible / daté (G2) · paliers, « à vie », quotas chiffrés, ✗ (G2bis) · conformité e-facture (#21) · Instagram ferme (gate Meta) · Google Sheets (retiré) · agenda (non codé) · activation immédiate (#29) · **IA française / données en Europe (ADR-085 non livrée)**.
 
 ## Séquence growth décidée (2026-07-28, confirmée 2026-07-31, amendée 2026-08-24)
-Deploy pricing + bascule Stripe LIVE → #63 → **premier post** (LinkedIn = Matthieu fondateur · Instagram = compte Manda ; offre Fondateur **sur le pack**) → outbound pré-vente **comptables** (kinés suspendus par #62) → client ops à l'arrivée des premiers Fondateurs. Zéro payant avant #29.
+~~Deploy pricing + bascule Stripe LIVE~~ ✅ (26/08) → **CP-120 → CP-121** → **premier post** (LinkedIn = Matthieu fondateur · Instagram = compte Manda ; offre Fondateur **sur le pack**) → outbound pré-vente **comptables + garages/carrossiers** (kinés suspendus par #62) → CP-122/123 garage → client ops à l'arrivée des premiers Fondateurs. Zéro payant avant #29. *(amendé 2026-08-26)*
