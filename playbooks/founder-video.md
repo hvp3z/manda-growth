@@ -19,26 +19,28 @@ Un stock valide dans `assets/founder/<session la plus récente>/` : `image1-face
 
 3. Écrire le script parlé (le livrable copy, avant toute génération) :
    - Format : 20-45 secondes à l'oral (~50-110 mots), ton « collègue fiable » de BRAND_VOICE — jamais un script qu'on ne dirait pas à voix haute.
-   - Structure : hook (1 phrase, recadrage ou tension) → développement (2-4 phrases, le problème vu par un dirigeant) → CTA doux (RDV découverte 15 min ou waitlist Fondateur — jamais « connectez votre boîte », G1).
+   - Structure : hook (1 phrase, recadrage ou tension) → développement (2-4 phrases, le problème vu par un dirigeant) → CTA (depuis G1 levée le 2026-08-27 : **`manda.run/pricing`** en CTA principal — pack Fondateur 34,50 €/mois, essai 7 jours — et RDV 15 min en CTA secondaire pour celui qui hésite ; **il n'y a plus de liste d'attente/waitlist**, ne jamais l'écrire ni la dire ; jamais « connectez votre boîte » comme promesse d'activation instantanée hors produit).
    - Rédiger aussi la légende LinkedIn qui accompagnera la vidéo au post (2-4 lignes, complète le script sans le répéter mot pour mot).
 
 4. Auto-contrôle GUARDRAILS sur le script **avant génération** (bloquant — un échec ici coûte cher après génération vidéo) :
-   G1 (pas de CTA connexion boîte mail) · G2 (Leo nommable comme futur seulement, jamais en tête) · G2bis (prix uniquement 29/69/129/34,50, aucun autre montant, pas de paliers) · G3 (pas de promesse conformité e-facture) · G4 (fonctionnalités réelles seulement) · G5 (RGPD deux niveaux, jamais « IA française/européenne ») · G7 (jamais « automatisation », aucun chiffre externe, jargon interdit) · G10 (si angle garage : rien au-delà d'Eli/Max existants tant que CP-122/123 ne sont pas livrés).
+   G1 (CTA `manda.run/pricing` en principal + RDV en secondaire, plus de waitlist, jamais « connectez votre boîte » comme activation instantanée) · G2 (Leo nommable comme futur seulement, jamais en tête) · G2bis (prix uniquement 29/69/129/34,50, aucun autre montant, pas de paliers) · G3 (pas de promesse conformité e-facture) · G4 (fonctionnalités réelles seulement) · G5 (RGPD deux niveaux, jamais « IA française/européenne ») · G7 (jamais « automatisation », aucun chiffre externe, jargon interdit) · G10 (si angle garage : rien au-delà d'Eli/Max existants tant que CP-122/123 ne sont pas livrés).
    Un échec = réécrire le script avant l'étape 5. Ne jamais générer une vidéo pour « corriger le texte après coup » — le script validé GUARDRAILS est la version qui part en génération.
 
 5. Préparer les références à partir du stock `assets/founder/<session>/` :
    - Vérifier que les 3 fichiers sont lisibles et correspondent bien à Matthieu.
    - Uploader/confirmer les médias source : `media_upload` (ou `media_upload_widget`/`media_import_url` selon la source) puis `media_confirm` pour chacun des 3 assets.
    - Si une voix de synthèse alignée est nécessaire (au lieu de réutiliser `audio1-voice` tel quel) : `create_voice` ou `create_voice_from_confirmed_audio` à partir de l'audio confirmé, puis `list_voices` pour vérifier l'ID retenu.
+   - **Écouter la narration générée avant de l'utiliser pour la vidéo** (R-007, `memory/MEMORY.md`) : `seed_audio` peut manger des syllabes en français même sur un script correct, défaut audible seulement à l'oreille. Si des mots sont mangés, régénérer (nouvelle tentative) et/ou baisser `speech_rate` (paramètre `generate_audio`, plage -50/+100) avant de lancer la génération vidéo (coûteuse). Ne jamais enchaîner texte → audio → vidéo sans cette vérification.
+   - **Vérifier `durationSec` du job audio avant de le passer en référence vidéo** (R-008) : `seedance_2_5` plafonne à 30s et rejette (422) toute génération où l'audio de référence dépasse ce plafond. Baisser `speech_rate` (débit plus lent, meilleure diction) allonge la narration — viser ≤ ~29s de marge, quitte à remonter le `speech_rate` par petits pas (ex. -5 → -3 → -2) jusqu'à repasser sous le plafond sans perdre la qualité de diction validée à l'oreille.
 
 6. Vérifier le workflow et le modèle avant de générer manuellement :
    - Appeler `get_workflow_instructions` (sans argument) pour voir le catalogue — vérifier s'il existe déjà un workflow « talking avatar »/UGC talking-head adapté avant de recomposer le prompt à la main.
    - Sinon, vérifier le modèle recommandé actuel avec `models_explore` (les modèles évoluent — Seedance 2.5 sert de référence à confirmer à l'exécution, jamais à figer en dur).
 
 7. Génération vidéo (si pas de workflow prédéfini adapté) :
-   - Config : durée 20-45s (adaptée à la longueur du script validé), 720p, **9:16** par défaut (LinkedIn mobile — préférer 16:9 seulement si le stock source est filmé en paysage).
-   - Reference binding : image confirmée → référence sujet/personnage, vidéo confirmée → référence de mouvement, audio confirmé (ou voix créée étape 5) → référence audio/voix.
-   - Prompt structuré : [Matthieu, fondateur, plan buste face caméra] + [parle directement à la caméra, ton posé et direct] + [caméra fixe, léger zoom avant très lent] + [éclairage naturel doux, cohérent avec l'image de référence] + [garder l'identité faciale et la voix strictement fidèles aux références, pas de dérive de traits sur la durée].
+   - Config : durée = durée de l'audio de référence (≤ 30s, cf. R-008), 720p, **9:16** par défaut (LinkedIn mobile — préférer 16:9 seulement si le stock source est filmé en paysage).
+   - **Reference binding — choix obligatoire (R-009)** : `seedance_2_5` en mode `omni_reference` ne supporte PAS de combiner `video_references` et `audio_references` dans la même génération (422 systématique). Par défaut, privilégier **image(s) + audio** (fidélité au script/voix validés, le modèle génère lui-même le mouvement à partir des images) plutôt que image + vidéo de mouvement + audio. N'utiliser `video_references` que si l'on accepte que le modèle génère son propre audio (pas notre script).
+   - Prompt structuré : [Matthieu, fondateur, plan buste face caméra] + [parle directement à la caméra, ton posé et direct] + [caméra fixe, léger zoom avant très lent] + [éclairage naturel doux, cohérent avec l'image/les images de référence] + [garder l'identité faciale et la voix strictement fidèles aux références, pas de dérive de traits sur la durée].
    - Negative prompt : dérive faciale, changement de décor, visage flou, bouche désynchronisée, artefacts, changement de tenue, arrière-plan instable.
    - Lancer avec `generate_video` (ou `generate_video_batch` pour tester plusieurs variantes en parallèle), suivre avec `job_status`/`jobs_wait`, récupérer avec `show_generations`/`reveal_generation`.
 

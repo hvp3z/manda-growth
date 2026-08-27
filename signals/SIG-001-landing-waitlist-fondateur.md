@@ -2,8 +2,8 @@
 date: 2026-07-28
 agent: growth-marketer
 type: produit
-statut: re-scopé
-verdict: "Axiom 2026-07-28 — accepté, re-scopé en CP produit (backlog roadmap G-1). Brief à écrire dans md-map/tasks/ dès réception de la spec complète (landing-waitlist.md) en review-queue ; prérequis au brief : décision Matthieu sur la destination des emails (outil emailing vs table DB). D'ici la mise en ligne, CTA de repli = DM/RDV, assumé."
+statut: caduc
+verdict: "Axiom 2026-08-27 — CADUC : la destination de conversion existe désormais (manda.run/pricing, Stripe LIVE prouvé 26/08, chemin de paiement sans crash CP-120/120b, G1 levée le 27/08). Aucune page waitlist ne sera construite (ADR-072 : pas de page intermédiaire quand le produit vend). Historique : Axiom 2026-07-28 — accepté, re-scopé en CP produit (backlog G-1), en attente spec growth + choix destination emails ; jamais briefé."
 ---
 
 # SIG-001 — Besoin d'un CP produit : page waitlist Fondateur (`manda.run/fondateur`)

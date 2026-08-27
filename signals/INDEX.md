@@ -9,4 +9,4 @@ Format fichier : `SIG-XXX-slug.md` avec frontmatter `date / agent / type: march�
 
 | ID | Date | Agent | Type | Constat (une ligne) | Statut |
 |----|------|-------|------|----------------------|--------|
-| SIG-001 | 2026-07-28 | growth-marketer | produit | Le trafic growth n'a aucune destination de conversion valide tant que #29 bloque — besoin d'un CP produit pour la page waitlist Fondateur `manda.run/fondateur` (capture email + tracking) | re-scopé (CP à briefer — backlog G-1 · attend : spec growth + choix Matthieu destination emails) |
+| SIG-001 | 2026-07-28 | growth-marketer | produit | Le trafic growth n'a aucune destination de conversion valide tant que #29 bloque — besoin d'un CP produit pour la page waitlist Fondateur `manda.run/fondateur` (capture email + tracking) | **caduc (2026-08-27)** — `/pricing` live + CP-120 = destination valide, G1 levée ; pas de page waitlist |

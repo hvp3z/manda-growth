@@ -1,7 +1,7 @@
 ---
 type: dérivé
-sources: sidecar Axiom (décisions #29/#46/#21/#63, ADR-064/068/082/085/087/089) · CNIL B2B · positioning-intel.md
-sync: 2026-08-26
+sources: sidecar Axiom (décisions #29/#46/#21/#63, ADR-064/068/082/085/087/089, CP-120/120b/121 validés) · CNIL B2B · positioning-intel.md
+sync: 2026-08-27
 règle: ne modifier que via playbooks/resync-context.md
 ---
 
@@ -9,11 +9,20 @@ règle: ne modifier que via playbooks/resync-context.md
 
 Un livrable qui viole une de ces règles est **invalide**, même s'il est excellent. En cas de doute : review-queue, pas d'envoi.
 
-## G1 — #29 : l'onboarding email n'est pas encore OUVERT (temporaire)
+## G1 — Lancement Fondateur : OUVERT depuis le 2026-08-27 (règle CTA changée)
+
+**✅ LEVÉE le 2026-08-27 (Axiom, session 24).** Tout ce que la séquence exigeait avant le premier post est soldé : Stripe LIVE prouvé (26/08), **CP-120/120b** (chemin de paiement sans crash : 11ᵉ Fondateur = bandeau « places prises », coupon sur unité refusé, déjà abonné → lien compte, sign-up ↔ tarif) et **CP-121** (Zoé canal-aware) validés et **vérifiés en prod le 27/08**. #29 ne bloque plus (fenêtre ≤100 comptes Google, bandeau « application non vérifiée » assumé et annoncé aux Fondateurs). Nouvelle règle :
+- **CTA principal autorisé : `manda.run/pricing`** — pack complet Fondateur **34,50 €/mois pendant 12 mois** (10 places, essai 7 jours). L'essai se lance en self-serve ; l'accompagnement à la main des Fondateurs commence **après** l'inscription (client-ops), il n'est plus un préalable.
+- **CTA secondaire** : RDV 15 min / message privé — toujours proposé à côté du lien (le prospect qui hésite ne doit jamais être seul face au tarif).
+- Toujours interdit : « connectez votre boîte » ou « démarrez l'essai » comme promesse d'activation *instantanée* hors du produit ; un Fondateur qui connecte Gmail verra un écran Google « application non vérifiée » — on le dit (script RDV, onboarding), on ne le cache pas.
+- **Média payant : toujours interdit** (décision distincte de Matthieu, pas levée par G1).
+
+<details><summary>Historique (avant le 27/08)</summary>
 
 **Changement de statut (resync 2026-07-31, CP-115 validé)** : la porte email **fonctionne** techniquement de bout en bout — l'écran « phishing » est levé depuis le 2026-07-22, le bug d'activation de la cible n°1 (dirigeant PME/artisan) et la reconnexion de boîte sont corrigés et prouvés (CP-115). Ce qui reste : un bandeau Google « application non vérifiée » (CASA en cours, fenêtre ≤100 comptes) et l'ouverture réservée à la cohorte Fondateur au lancement. Donc la règle opérationnelle NE CHANGE PAS :
 - **Aucun CTA « connectez votre boîte » / « démarrez l'essai » dans l'outbound** tant qu'Axiom n'a pas déclaré le lancement ouvert. CTA autorisés : RDV découverte 15 min · inscription waitlist Fondateur.
 - Aucun média payant (déjà acté 2026-07-12).
+</details>
 
 ## G2 — Leo : #46 close (CP-118), statut CHANGÉ le 2026-08-24
 
