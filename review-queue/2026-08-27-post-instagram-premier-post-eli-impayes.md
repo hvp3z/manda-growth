@@ -6,6 +6,7 @@ sous-type: post-instagram
 statut: approved
 verdict: "Matthieu 2026-08-27 (via session Axiom) — approved. Publication par Matthieu sur le compte Manda le 31/08 ou le mardi 01/09, 12h-13h, après mise du lien manda.run/pricing en bio."
 decline: 2026-08-27-post-linkedin-premier-post-eli-impayes.md
+correction-typo: "2026-08-28 Axiom, ADR-091 (règle du 28/08, postérieure à l'approbation) : flèche → et tiret long retirés de la légende (essai 7 jours : manda.run/pricing, lien en bio). Sens et CTA inchangés, approbation maintenue. Le visuel peut être remplacé par la vidéo d'intro (2026-08-28-founder-video-intro-instagram.md) si elle est prête lundi."
 ---
 
 **Déclinaison Instagram (compte Manda)** du premier post LinkedIn — même axe Eli impayés, mêmes cibles (comptables + carrossiers, angle G10), légende courte.
@@ -22,9 +23,9 @@ Vos impayés ne le resteront plus.
 
 Comptable, carrossier : la relance est la tâche qu'on repousse toujours à demain. Pendant ce temps, c'est votre argent qui attend.
 
-Eli suit vos devis et vos factures depuis votre boîte mail, sans changer de logiciel. Relance courtoise à J+7, ferme à J+15, mise en demeure préparée — rien ne part sans votre validation.
+Eli suit vos devis et vos factures depuis votre boîte mail, sans changer de logiciel. Relance courtoise à J+7, ferme à J+15, mise en demeure préparée : rien ne part sans votre validation.
 
-10 places Fondateur : le pack complet à 34,50 €/mois pendant 12 mois (−50 %), essai 7 jours → manda.run/pricing (lien en bio). Une question ? Écrivez-nous en message privé.
+10 places Fondateur : le pack complet à 34,50 €/mois pendant 12 mois (−50 %), essai 7 jours : manda.run/pricing, lien en bio. Une question ? Écrivez-nous en message privé.
 
 #tresorerie #impayes #expertcomptable #carrosserie #pme
 
