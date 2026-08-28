@@ -1,9 +1,9 @@
 ---
 type: dérivé
 sources: content-factory/brand/BRAND_RULES.md + corrections v1.1 (REPORT.md mineral-v1, ADR-078/082) · positioning-intel.md
-sync: 2026-07-28
+sync: 2026-08-27
 règle: ne modifier que via playbooks/resync-context.md
-note: BRAND_RULES.md master corrigé le 2026-07-28 (bundle 49 € retiré, Sheets retiré, relances → Eli)
+note: BRAND_RULES.md master corrigé le 2026-07-28 (bundle 49 € retiré, Sheets retiré, relances → Eli) · resync 2026-08-27 (règle logo SVG + palette visuels ≠ app, master du 31/07 ; voix inchangée — les prix du master sont caducs, OFFER.md fait foi)
 ---
 
 # BRAND_VOICE — Comment Manda parle
@@ -15,6 +15,8 @@ note: BRAND_RULES.md master corrigé le 2026-07-28 (bundle 49 € retiré, Sheet
 ## Ton
 
 Calme, direct, chiffré (chiffres produit uniquement), autorité tranquille. Un collègue fiable. Jamais de hype startup, jamais d'emoji dans les visuels, français impeccable (accents sur majuscules : À, É).
+
+**Typographie (règle Matthieu, 2026-08-28) : aucun tiret long (—), aucun tiret demi-cadratin (–), aucune flèche (→) dans les posts, générés ou rédigés, pour Manda comme pour les clients de Zoé.** Ce sont les marqueurs d'IA générative les plus reconnaissables. Ponctuation française classique à la place : point, virgule, deux-points, point-virgule, parenthèses. Le trait d'union (-) reste autorisé dans les mots composés. Un post qui en contient est refusé en review, jamais publié « en l'attendant ». *(Côté produit : consigne du ghostwriter + garde-fou déterministe, CP-123b.)*
 
 ## Lexique
 
@@ -36,6 +38,8 @@ Calme, direct, chiffré (chiffres produit uniquement), autorité tranquille. Un 
 - Fonds : sable `#FFF8F3` · papier chaud `#FFFBF8` · sombre `#0E1912` (2-3 posts max par série).
 - Typo : Plus Jakarta Sans (corps + titres) · Instrument Serif italique (pull quotes émotionnelles uniquement) · JetBrains Mono uppercase (petits labels `MANDA · <NOM>`).
 - Badges pill `9999px` · cards `16px` · style Notion/Linear, généreux en blanc, zéro stock-photo.
+- **Logo : jamais composé en typographie** — SVG canoniques du produit uniquement (`manda-logo.svg` fond clair · `manda-logo-dark.svg` fond sombre · `M-de-manda.svg` mark seul), vert du mark `#0CCD5A` jamais recoloré, ratio natif 177×67, jamais de PNG. *(BRAND_RULES §4, 2026-07-31)*
+- **Palette visuels ≠ palette app, c'est voulu** (arbitrage Matthieu 2026-07-30) : encre `#2C2520`, sable `#FFF8F3`, vert `#22C55E` pour les posts — ne jamais les « corriger » vers `globals.css`.
 - Logo Higgsfield réutilisable : `media_id 773e0860-cb6f-4b1d-9f6a-f608550bc45b` — « reproduce FAITHFULLY, do NOT redesign ».
 - **Toute retouche d'un visuel existant passe l'original validé en référence d'image** (« reproduce EXACTLY, change only… ») — leçon v1.1b.
 

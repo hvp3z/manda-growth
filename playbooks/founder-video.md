@@ -1,4 +1,4 @@
-# SOP — founder-video (vidéo mensuelle avatar parlant de Matthieu, LinkedIn)
+# SOP — founder-video (vidéo mensuelle fondateur, LinkedIn)
 
 **Qui** : growth-marketer (script + génération) · Matthieu (tournage du stock source, validation review-queue, publication tant que G8 n'est pas libéré).
 **Quand — déclencheur** : mensuel, non calé sur un jour fixe. Déclenché par Matthieu dès qu'un stock `assets/founder/` à jour existe, ou par growth-marketer s'il constate qu'aucune vidéo fondateur n'a été produite depuis > 30 jours et qu'un stock valide est déjà disponible (jamais d'auto-déclenchement s'il faut d'abord tourner du footage).
@@ -6,10 +6,18 @@
 **Canal** : compte LinkedIn de Matthieu (voix du fondateur) — nouveau format sur le canal/axe déjà décidé, pas un nouveau canal.
 
 ## Objectif
-Renforcer la voix fondateur sur LinkedIn avec un format vidéo mensuel, sans jamais tourner de nouvelles images à chaque fois : on réutilise le stock `assets/founder/` et on génère l'avatar parlant via le MCP Higgsfield. Le script parlé est un livrable copy à part entière : il respecte GUARDRAILS et BRAND_VOICE **avant** génération, pas après.
+Renforcer la voix fondateur sur LinkedIn avec un format vidéo mensuel. Le script parlé est un livrable copy à part entière : il respecte GUARDRAILS et BRAND_VOICE **avant** génération/tournage, pas après.
+
+## Deux modes de production (rapprochés le 2026-08-27)
+
+Le script (étapes 1-4) et l'habillage final (étape 8bis) sont **communs aux deux modes**. Seule la fabrication du plan caméra diffère :
+
+- **Mode A — avatar généré** (étapes 5-8) : on ne tourne jamais de nouvelles images, on réutilise le stock `assets/founder/` et on génère l'avatar parlant via le MCP Higgsfield (`seedance_2_5`). C'est le mode par défaut de ce playbook, pensé pour ne pas dépendre d'un nouveau tournage à chaque vidéo.
+- **Mode B — tournage réel** : Matthieu se filme lui-même (footage réel, pas d'avatar généré) et monte dans CapCut. Dans ce cas, sauter les étapes 5-8 (pas de génération Higgsfield) ; utiliser à la place les backgrounds/assets visuels générés au besoin (ex. arrière-plan Instagram vertical) comme habillage du plan filmé. Ce mode existe parce que l'automatisation bout-en-bout (mode A) demande encore une revalidation manuelle lourde — voir `memory/MEMORY.md` si une note y a été ajoutée sur ce point. Choisi par Matthieu au cas par cas, pas par growth-marketer.
 
 ## Prérequis
-Un stock valide dans `assets/founder/<session la plus récente>/` : `image1-face.*`, `video1-motion.*`, `audio1-voice.*` (voir `assets/founder/README.md`). Si absent ou trop ancien (> ~6-12 mois) : le signaler à Matthieu en note, continuer avec le stock existant s'il reste présentable — ce n'est pas une étape bloquante du playbook.
+**Mode A uniquement** : un stock valide dans `assets/founder/<session la plus récente>/` : `image1-face.*`, `video1-motion.*`, `audio1-voice.*` (voir `assets/founder/README.md`). Si absent ou trop ancien (> ~6-12 mois) : le signaler à Matthieu en note, continuer avec le stock existant s'il reste présentable — ce n'est pas une étape bloquante du playbook.
+**Mode B** : pas de prérequis stock — Matthieu fournit le footage filmé au moment du montage.
 
 ## Procédure
 
@@ -26,33 +34,40 @@ Un stock valide dans `assets/founder/<session la plus récente>/` : `image1-face
    G1 (CTA `manda.run/pricing` en principal + RDV en secondaire, plus de waitlist, jamais « connectez votre boîte » comme activation instantanée) · G2 (Leo nommable comme futur seulement, jamais en tête) · G2bis (prix uniquement 29/69/129/34,50, aucun autre montant, pas de paliers) · G3 (pas de promesse conformité e-facture) · G4 (fonctionnalités réelles seulement) · G5 (RGPD deux niveaux, jamais « IA française/européenne ») · G7 (jamais « automatisation », aucun chiffre externe, jargon interdit) · G10 (si angle garage : rien au-delà d'Eli/Max existants tant que CP-122/123 ne sont pas livrés).
    Un échec = réécrire le script avant l'étape 5. Ne jamais générer une vidéo pour « corriger le texte après coup » — le script validé GUARDRAILS est la version qui part en génération.
 
-5. Préparer les références à partir du stock `assets/founder/<session>/` :
+5. **[Mode A uniquement]** Préparer les références à partir du stock `assets/founder/<session>/` :
    - Vérifier que les 3 fichiers sont lisibles et correspondent bien à Matthieu.
    - Uploader/confirmer les médias source : `media_upload` (ou `media_upload_widget`/`media_import_url` selon la source) puis `media_confirm` pour chacun des 3 assets.
    - Si une voix de synthèse alignée est nécessaire (au lieu de réutiliser `audio1-voice` tel quel) : `create_voice` ou `create_voice_from_confirmed_audio` à partir de l'audio confirmé, puis `list_voices` pour vérifier l'ID retenu.
    - **Écouter la narration générée avant de l'utiliser pour la vidéo** (R-007, `memory/MEMORY.md`) : `seed_audio` peut manger des syllabes en français même sur un script correct, défaut audible seulement à l'oreille. Si des mots sont mangés, régénérer (nouvelle tentative) et/ou baisser `speech_rate` (paramètre `generate_audio`, plage -50/+100) avant de lancer la génération vidéo (coûteuse). Ne jamais enchaîner texte → audio → vidéo sans cette vérification.
    - **Vérifier `durationSec` du job audio avant de le passer en référence vidéo** (R-008) : `seedance_2_5` plafonne à 30s et rejette (422) toute génération où l'audio de référence dépasse ce plafond. Baisser `speech_rate` (débit plus lent, meilleure diction) allonge la narration — viser ≤ ~29s de marge, quitte à remonter le `speech_rate` par petits pas (ex. -5 → -3 → -2) jusqu'à repasser sous le plafond sans perdre la qualité de diction validée à l'oreille.
 
-6. Vérifier le workflow et le modèle avant de générer manuellement :
+6. **[Mode A uniquement]** Vérifier le workflow et le modèle avant de générer manuellement :
    - Appeler `get_workflow_instructions` (sans argument) pour voir le catalogue — vérifier s'il existe déjà un workflow « talking avatar »/UGC talking-head adapté avant de recomposer le prompt à la main.
    - Sinon, vérifier le modèle recommandé actuel avec `models_explore` (les modèles évoluent — Seedance 2.5 sert de référence à confirmer à l'exécution, jamais à figer en dur).
 
-7. Génération vidéo (si pas de workflow prédéfini adapté) :
+7. **[Mode A uniquement]** Génération vidéo (si pas de workflow prédéfini adapté) :
    - Config : durée = durée de l'audio de référence (≤ 30s, cf. R-008), 720p, **9:16** par défaut (LinkedIn mobile — préférer 16:9 seulement si le stock source est filmé en paysage).
    - **Reference binding — choix obligatoire (R-009)** : `seedance_2_5` en mode `omni_reference` ne supporte PAS de combiner `video_references` et `audio_references` dans la même génération (422 systématique). Par défaut, privilégier **image(s) + audio** (fidélité au script/voix validés, le modèle génère lui-même le mouvement à partir des images) plutôt que image + vidéo de mouvement + audio. N'utiliser `video_references` que si l'on accepte que le modèle génère son propre audio (pas notre script).
    - Prompt structuré : [Matthieu, fondateur, plan buste face caméra] + [parle directement à la caméra, ton posé et direct] + [caméra fixe, léger zoom avant très lent] + [éclairage naturel doux, cohérent avec l'image/les images de référence] + [garder l'identité faciale et la voix strictement fidèles aux références, pas de dérive de traits sur la durée].
    - Negative prompt : dérive faciale, changement de décor, visage flou, bouche désynchronisée, artefacts, changement de tenue, arrière-plan instable.
    - Lancer avec `generate_video` (ou `generate_video_batch` pour tester plusieurs variantes en parallèle), suivre avec `job_status`/`jobs_wait`, récupérer avec `show_generations`/`reveal_generation`.
 
-8. Contrôle qualité et troubleshooting avant dépôt review-queue :
+8. **[Mode A uniquement]** Contrôle qualité et troubleshooting avant habillage final :
    - Dérive faciale sur la durée → relancer en réduisant l'influence de la référence vidéo (mouvement) et en renforçant la référence image (identité).
    - Lipsync imparfait → vérifier que l'audio est propre (pas de bruit de fond) et que l'image de référence a la bouche fermée ou légèrement entrouverte (pas grande ouverte) comme point de départ.
    - Erreur content-policy → revérifier que le visage correspond bien à Matthieu, aucune ressemblance de tiers/célébrité involontaire.
    - Si upscale nécessaire pour la qualité finale LinkedIn : `upscale_video`.
 
+8bis. **Habillage final (obligatoire, les deux modes)**, avant tout dépôt en review-queue :
+   - Ajouter `assets/brand/outro-cta.png` en fin de vidéo, affiché ~2 secondes (voir `assets/brand/README.md`).
+   - Ajouter une musique de fond sur toute la durée de la vidéo (pas un asset fixe du repo — à choisir/monter à ce moment).
+   - Mode B (montage CapCut manuel) : cette étape est faite par Matthieu directement dans CapCut, pas par growth-marketer.
+   - Ne jamais déposer en review-queue une vidéo sans ces deux éléments.
+
 9. Déposer en `review-queue/` avec `type: video-linkedin` (voir `review-queue/README.md`) :
    - `asset:` chemin vers le fichier vidéo généré (ex. `content-factory/output/founder-video/AAAA-MM-slug.mp4`).
    - Script parlé intégral, légende LinkedIn, description du plan/visuel en 2-3 lignes.
+   - Confirmer dans le dépôt que l'outro CTA et la musique de fond sont bien présents (étape 8bis).
    - Nom du fichier review-queue : `AAAA-MM-JJ-founder-video-<slug-angle>.md`.
 
 10. Ligne DAILY_LOG :
