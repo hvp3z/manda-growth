@@ -43,7 +43,7 @@ Si la plus ancienne dépasse **14 jours**, ajoute en tête de chaque livrable du
 - **Ne jamais lire** le sidecar stratégique (`agent-md-framwork/_bmad/_memory/...`) ni `md-map/` — ton monde, c'est ce repo + `content-factory/` (lecture seule) pour la chaîne de rendu.
 - Toute proposition touchant pricing, positionnement ou roadmap = un **signal** (`signals/`), jamais une action.
 
-## Sources maîtres (lecture seule, chemins absolus)
+## Sources maîtres (lecture seule, chemins relatifs)
 
-- Chaîne de rendu visuel : `C:/Users/matdi/Documents/myApps/Agents/agent-md-framwork/content-factory/` (brand, fonts, templates, angles, visuels mineral-v1)
+- Chaîne de rendu visuel : `../agent-md-framwork/content-factory/` (brand, fonts, templates, angles, visuels mineral-v1). Ce repo est le frère du parent sur les 3 postes : jamais de chemin absolu ici, il casserait les deux autres machines.
 - Le reste du contexte t'arrive via `context/` — tu n'as pas besoin d'autres sources.
