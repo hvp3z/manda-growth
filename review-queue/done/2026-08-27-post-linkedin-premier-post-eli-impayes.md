@@ -2,7 +2,7 @@
 date: 2026-08-27
 agent: growth-marketer
 type: post-linkedin
-statut: approved
+statut: published
 verdict: "Matthieu 2026-08-27 (via session Axiom) — approved, publier tel quel. Publication par Matthieu lundi 31/08, 8h-9h (palier draft-review non libéré ; compteur de libération : 1/10 — le 28/07 approuvé n'a jamais été publié, il ne compte pas). Après publication : déplacer en done/ + créer campaigns/linkedin-organique/results.md."
 correctif: "2026-08-28 (Axiom, règle Matthieu) — tirets longs et flèche retirés (marqueurs IA), texte aligné sur le post programmé en prod `ca3b494d` (Zoé, lundi 31/08 08:30). Publication désormais PAR ZOÉ, pas manuellement."
 remplace: 2026-07-28-post-linkedin-eli-impayes.md (périmé — kinés, CTA DM sans lien, jamais publié ; archivé en done/)
@@ -48,3 +48,7 @@ Et si vous préférez en parler avant : un message privé, ou 15 minutes ensembl
 - **G5** ✅ aucun claim RGPD / « IA française ».
 - **G7** ✅ zéro « automatisation », « outil », « configurer », « plateforme » ; aucun chiffre externe (J+7/J+15 = mécanique produit).
 - **G10** ✅ carrossier : uniquement « devis et factures suivis et relancés depuis votre boîte mail, sans changer de logiciel » ; aucun expert d'assurance, aucune facture détectée, aucun devis généré, aucune pièce, aucun temps chiffré, aucun paiement/encaissement, aucun DARVA/Sidexa. Douleur carrossier écrite sur le devis sans réponse et la facture sans nouvelles (pas « impayé mécanicien » — ICP C).
+
+---
+
+**Publication (2026-09-01)** : parti par Zoé, URN `7500545705221185536`. Programmé le 31/08 08:30, refusé par LinkedIn (`426 NONEXISTENT_VERSION`, version d'API sunsetée — CP-128a), republié le 01/09 à quelques heures de la limite de 48 h qui l'aurait tué. Aucune inscription n'a suivi dans les six jours. Résultats : `campaigns/linkedin-organique/results.md`.

@@ -3,8 +3,8 @@ date: 2026-08-28
 agent: axiom
 type: video-linkedin
 sous-type: video-instagram-intro (mode B, tournage réel + CapCut)
-statut: pending
-verdict: ""
+statut: published
+verdict: "Matthieu 2026-09-02 (via session Axiom) — tournée en mode B, montée, publiée sur le compte Instagram Manda. Premiers retours entrants reçus dont Maria, rendez-vous le vendredi 04/09. C'est le premier contenu du lancement à produire une conversation."
 asset: "à tourner par Matthieu ce week-end (mode B) ; remplace le visuel a1.png de 2026-08-27-post-instagram-premier-post-eli-impayes.md si publié en vidéo"
 ---
 
