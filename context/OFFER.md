@@ -1,8 +1,8 @@
 ---
 type: dérivé
-sources: md-map /pricing (page.tsx + PricingComposer.tsx + fr.json, état post-CP-120) · ADR-087/089 · sidecar Axiom (#45, #63 clos, G1 levée)
-sync: 2026-08-27
-règle: ne modifier que via playbooks/resync-context.md — le prix maître est TOUJOURS la page /pricing (état validé CP-119 ; en prod dès le deploy + bascule Stripe LIVE)
+sources: md-map /pricing (page.tsx + PricingComposer.tsx + fr.json, état post-CP-130) · ADR-087/089 · ADR-094 · sidecar Axiom (#45, #63 clos, G1 levée)
+sync: 2026-09-02
+règle: ne modifier que via playbooks/resync-context.md — le prix maître est TOUJOURS la page /pricing (état validé CP-130, en prod le 2026-09-02)
 ---
 
 # OFFER — Ce qui est vendable AUJOURD'HUI
@@ -15,11 +15,13 @@ règle: ne modifier que via playbooks/resync-context.md — le prix maître est 
 |---|---|---|---|
 | **À l'unité** | **29 €/mois par assistant** | Max, Zoé **ou** Eli — **complet**, aucune fonctionnalité retirée, à aucun étage | ✗ non applicable |
 | **Pack complet** ⭐ | **69 €/mois** | Max + Zoé + Eli, un seul tableau de bord (2 unités = 58 € → l'unité est un leurre, le pack est l'offre cible) | ✅ **34,50 €** les 12 premiers mois |
-| **Premium** | 129 €/mois | Pack complet + **Leo (prospection)** + plusieurs comptes Zoé + plus de capacité — **pas encore souscriptible** (« Ouvre avec Leo », CTA = mailto « Parler à un humain ») | ✅ 64,50 € — à l'ouverture seulement |
+| **Premium** | 129 €/mois | Pack complet + **Leo (prospection)** + plusieurs comptes Zoé — **et rien d'autre** (CP-130) — **pas encore souscriptible** (« Ouvre avec Leo », CTA = mailto « Parler à un humain ») | ✅ 64,50 € — à l'ouverture seulement |
 
 **Rôles (mots client, copy validée)** : Max — *Email* · Zoé — *LinkedIn & Instagram* · Eli — *Devis, factures & relances* · Leo — *Bientôt — prospection*.
 
 **Invariant de discours (Fig. 03 de la page)** : « Aucune ligne ne disparaît d'un étage à l'autre. Chaque assistant reste complet. » → jamais de ✗, jamais de retrait, jamais de quota chiffré (décision Matthieu 2026-08-21 : pas de chiffres de quotas au lancement).
+
+⚠️ **Changement de statut le 2026-09-02 (CP-130, ADR-094)** : la page promettait « plus de capacité sur tous les assistants » sur Premium, ce qui contredisait l'invariant et n'était de toute façon pas vrai — aucun client n'est aujourd'hui réellement limité par sa capacité, à aucun étage. Les trois formulations fautives ont été retirées de `/pricing`. **Premium ne se justifie plus que par deux choses vérifiables : Leo et les comptes Zoé multiples.** La capacité ne redeviendra un argument de palier que le jour où l'enforcement des quotas existera (CP à scoper). Voir G2bis.
 
 ## Offre Fondateur (ADR-089)
 

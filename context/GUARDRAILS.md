@@ -1,7 +1,7 @@
 ---
 type: dérivé
-sources: sidecar Axiom (décisions #29/#46/#21/#63, ADR-064/068/082/085/087/089, CP-120/120b/121 validés) · CNIL B2B · positioning-intel.md
-sync: 2026-08-27
+sources: sidecar Axiom (décisions #29/#46/#21/#63, ADR-064/068/082/085/087/089/094, CP-120/120b/121/130 validés) · CNIL B2B · positioning-intel.md
+sync: 2026-09-02
 règle: ne modifier que via playbooks/resync-context.md
 ---
 
@@ -35,6 +35,7 @@ Un livrable qui viole une de ces règles est **invalide**, même s'il est excell
 - **Jamais de paliers** (Essentiel/Pro), jamais « prix bloqué à vie », jamais de bundle Max+Zoé ni cash-flow 49 € : tout est mort (voir OFFER).
 - **Fondateur = packs uniquement** (−50 % / 12 mois, 10 places). Écrire « Fondateur sur Max à 9,50 € » est un défaut bloquant.
 - **Jamais de quota chiffré** ni de comparatif avec des ✗ (décision Matthieu 2026-08-21) : « chaque assistant reste complet ».
+- 🆕 **Jamais la capacité comme argument de palier (ADR-094, CP-130, 2026-09-02).** Écrire que Premium — ou n'importe quel étage — donne « plus de capacité », « plus de volume », « plus de traitements » est un **défaut bloquant**, chiffré ou non. Deux raisons, et la seconde suffit : ça contredit l'invariant « chaque assistant reste complet », et **c'est faux** — aucun client n'est aujourd'hui réellement limité par sa capacité, à aucun étage, donc la promesse n'est même pas vérifiable. Une visiteuse l'a relevée seule sur `/pricing` le jour de l'ouverture Fondateur (SIG-002). **Premium se justifie par deux choses, et uniquement par elles : Leo (la prospection) et plusieurs comptes Zoé.** Cette ligne sera levée par Axiom le jour où l'enforcement des quotas sera livré.
 - ~~Jusqu'au deploy CP-119 + bascule Stripe LIVE : aucun prix dans un contenu public~~ → **LEVÉE le 2026-08-26** (grille en prod, Stripe LIVE prouvé de bout en bout). Les prix 29 / 69 / 129 et le Fondateur 34,50 € peuvent être écrits — **uniquement ces montants**, dans les mots d'OFFER.md.
 
 ## G3 — #21 : e-facture (close dans le produit le 2026-08-24, la règle de discours reste)

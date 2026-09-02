@@ -2,6 +2,7 @@
 
 > Format : `AAAA-MM-JJ · agent · action · résultat/lien`. Les agents ajoutent EN HAUT (plus récent en premier).
 
+- 2026-09-02 · axiom · resync-context · OFFER.md (Premium = Leo + comptes Zoé multiples **et rien d'autre**, la ligne « plus de capacité » retirée de la grille · changement de statut daté sous l'invariant Fig. 03) + GUARDRAILS.md (**G2bis : la capacité n'est plus un argument de palier, défaut bloquant chiffré ou non** — sera levée à la livraison de l'enforcement) · SIG-002 volet wording clos (fichier + INDEX) · raison : CP-130 validé et déployé (ADR-094). Balayage du dépôt : aucun contenu growth ne portait la promesse. Signaux : 0 `new`.
 - 2026-09-02 · axiom · Revue de la file de validation : vidéo d'intro Instagram et premier post LinkedIn passés en `published` et classés en `done/` · `campaigns/linkedin-organique/results.md` créé (demandé par le verdict du 27/08, resté dû 5 jours) · 3 scripts vidéo restent en attente d'arbitrage (max-temps caduc, RGPD, Eli) · review-queue/done/
 - 2026-09-02 · axiom · Constat base de production : **zéro ligne `clients` créée depuis le 26/08**, zéro `is_founder`. Le lancement ne convertit pas en inscription libre-service, il convertit en conversation. La base n'est donc pas l'instrument de mesure du lancement · —
 - 2026-09-01 · zoe · Premier post LinkedIn du lancement **publié** (URN `7500545705221185536`) après échec du créneau programmé du 31/08 (`426 NONEXISTENT_VERSION`, version d'API sunsetée — CP-128a) · campaigns/linkedin-organique/results.md
