@@ -45,3 +45,24 @@ ADR-094) vient de ce canal, pas de LinkedIn.
 
 **Ce qui n'est pas mesuré.** Vues, portée, taux de complétion de la vidéo. À relever dans Instagram
 Insights tant que la fenêtre le permet.
+
+## 2026-09-09 · Post Instagram « Vos impayés ne le resteront plus » (Eli, visuel a1), compte Manda
+
+| Fait | Valeur |
+|---|---|
+| Canal | Instagram, compte `bonjour.manda` (31 abonnés, 1 publication avant celle-ci) |
+| Format | image 4:5 `content-factory/output/mineral-v1/a1.png`, légende approuvée le 27/08 |
+| Programmé | 2026-09-09 12:15 Paris, programmateur natif Instagram, par Axiom via Chrome |
+| Réellement publié | à confirmer après 12:15 |
+| Lien de bio au moment de la publication | `manda.run` (décision Matthieu du 09/09 : pas de passage à `/pricing`) |
+| Hashtags | `#tresorerie #impayes #independants #pme #entrepreneur` |
+| Inscriptions attribuables | à relever |
+| Retours entrants (DM, commentaires) | à relever |
+
+**Ce que ce post teste.** Le format affiche (visuel minéral + légende produit) sur Instagram, là où le seul
+contenu qui a produit une conversation jusqu'ici est la vidéo d'intro face caméra. Si ce post ne produit ni
+DM ni commentaire à 48 h, la conclusion est que sur ce compte le format qui convertit est le fondateur à
+l'image, et les affiches passent en support secondaire.
+
+**Relevé dû avant le 2026-09-11 12:15** : portée, impressions, visites du profil, clics sur le lien de bio,
+DM et commentaires. Sans relevé dans les 48 h, ce post ne nous apprend rien.

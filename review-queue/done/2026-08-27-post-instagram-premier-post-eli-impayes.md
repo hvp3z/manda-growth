@@ -3,9 +3,10 @@ date: 2026-08-27
 agent: growth-marketer
 type: autre
 sous-type: post-instagram
-statut: approved
+statut: published
 verdict: "Matthieu 2026-08-27 (via session Axiom) — approved. Publication par Matthieu sur le compte Manda le 31/08 ou le mardi 01/09, 12h-13h, après mise du lien manda.run/pricing en bio."
 decline: 2026-08-27-post-linkedin-premier-post-eli-impayes.md
+publication: "2026-09-09 Axiom via Chrome, compte bonjour.manda — programmé dans Instagram (programmateur natif) pour le mer. 09/09 12:15 Paris, ratio original 4:5, aucun filtre. Décisions Matthieu au moment de publier : lien de bio conservé sur manda.run (pas manda.run/pricing) ; hashtags remplacés par #tresorerie #impayes #independants #pme #entrepreneur (#independents corrigé en français, #entrepreneur ajouté comme tag général). Texte de la légende inchangé. Relevé Insights dû avant le 11/09 12:15."
 correction-typo: "2026-08-28 Axiom, ADR-091 (règle du 28/08, postérieure à l'approbation) : flèche → et tiret long retirés de la légende (essai 7 jours : manda.run/pricing, lien en bio). Sens et CTA inchangés, approbation maintenue. Le visuel peut être remplacé par la vidéo d'intro (2026-08-28-founder-video-intro-instagram.md) si elle est prête lundi."
 ---
 
