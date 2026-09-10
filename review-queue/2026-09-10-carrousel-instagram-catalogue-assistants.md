@@ -5,7 +5,7 @@ type: autre
 sous-type: carrousel-instagram
 statut: pending
 verdict: "Matthieu 2026-09-10 (via session Axiom) : structure approuvée. Couverture = Max, Zoé, Eli + Leo en « Bientôt » (pas Sage/Iris). Hook = tagline « Déléguez sans recruter. ». Publication lundi 14/09 12h15 puis épinglage (la story Eli tourne jusqu'au 11/09 midi, pas de bruit avant). Visuels : recherche design carrousel demandée AVANT le rendu."
-etape: "structure validée ; recherche design (agent, 10/09) puis rendu content-factory (5 slides 4:5, base visuelle b5.png pour la couverture)"
+etape: "VISUELS RENDUS le 10/09 (content-factory/output/catalogue-v1/c1-s1..s5.png, REPORT.md) ; attend le verdict visuel de Matthieu, puis programmation lundi 14/09 12h15 + épinglage content-factory (5 slides 4:5, base visuelle b5.png pour la couverture)"
 origine: "remarque de la femme de Matthieu (10/09) : aucune image ne montre ce qui est disponible chez Manda"
 usage: "post ÉPINGLÉ en haut du profil bonjour.manda ; passe avant le carrousel Zoé (2026-09-10-carrousel-instagram-zoe-3-slides.md, parked)"
 recherche: memory/learnings/2026-09-10-instagram-carousel-hooks-cta.md
@@ -13,38 +13,39 @@ recherche: memory/learnings/2026-09-10-instagram-carousel-hooks-cta.md
 
 **Carrousel catalogue, 5 slides.** La vitrine du Store : ce qui est disponible, un assistant par slide, l'offre en dernier. Vouvoiement, zéro emoji sur les visuels, zéro tiret long, **aucun prix sur les slides** (post épinglé = contenu qui dure ; prix dans la légende uniquement, règle CLAUDE.md).
 
+**Système commun (itéré avec Matthieu le 10/09)** : 1080×1350 · fond sable `#FFF8F3` · marges 90 px, rien d'important dans la bande basse de 90 px · **header = logo Manda SVG canonique seul, en haut à gauche** (jamais le mot en typographie, aucun label à côté ni dessous) · **aucune pagination sur les visuels** (Instagram affiche la sienne) · une seule couleur d'accent par slide (celle de la pierre), reprise sur le nom uniquement · pied : `manda.run` en mono, petit.
+
 ## 1/5 — couverture (base : b5.png, les 4 pierres, nommées)
 
-- Label `MANDA` · `1 / 5`
-- Titre : **Déléguez sans recruter.**
-- Sous-titre : *Trois assistants déjà formés. Rien à configurer.*
-- Sous chaque pierre, mots validés d'OFFER.md : **Max · Email** (corail) · **Zoé · LinkedIn & Instagram** (violet) · **Eli · Devis, factures & relances** (bleu) · **Leo · Bientôt, prospection** (terre cuite, atténué)
-- Cue de swipe discret en bas à droite
+- Titre Plus Jakarta ~84 px : **Vos assistants sont prêts.**
+- Sous-titre serif italique ~36 px : *Ils connaissent déjà votre métier.*
+- Bande des quatre pierres au tiers bas (~180 px chacune) ; sous chaque pierre, mono 22 px, **nom seul** : MAX (corail) · ZOÉ (violet) · ELI (bleu) · LEO (terre cuite, pierre et nom atténués à 50 %, mention « bientôt » en dessous en 18 px)
+- Chevron fin en bas à droite comme signal de swipe
 
-## 2/5 — Max (pierre corail `#FF6248`)
+## 2/5 — Max (pierre corail `#FF6248`, seule, centrée ~500 px)
 
-- Label `MAX · EMAIL` · `2 / 5`
-- Titre : **Max, votre boîte mail.**
-- Corps : Chaque matin, un récap clair et vos réponses déjà préparées. Vous validez, rien ne part sans vous.
+- Nom 64 px corail : **Max**
+- Rôle serif italique 32 px : *votre boîte mail.*
+- Preuve 28 px : Chaque matin : un récap clair, vos mails triés, vos réponses préparées. Vous validez.
 
 ## 3/5 — Zoé (pierre violette `#9B59B6`)
 
-- Label `ZOÉ · LINKEDIN & INSTAGRAM` · `3 / 5`
-- Titre : **Zoé, votre présence en ligne.**
-- Corps : Elle écrit dans votre voix, au rythme que vous choisissez. Rien n'est publié sans votre accord.
+- Nom 64 px violet : **Zoé**
+- Rôle serif italique 32 px : *elle tient vos réseaux.*
+- Preuve 28 px : Vos posts LinkedIn dans votre voix, vos commentaires Instagram suivis. Vous gardez le dernier mot.
 
 ## 4/5 — Eli (pierre bleue `#2C4A7C`)
 
-- Label `ELI · DEVIS, FACTURES & RELANCES` · `4 / 5`
-- Titre : **Eli, vos devis et vos factures.**
-- Corps : Il les suit depuis votre boîte mail, relance à J+7 et J+15, prépare la mise en demeure. Vous validez avant l'envoi.
+- Nom 64 px bleu : **Eli**
+- Rôle serif italique 32 px : *vos devis et vos factures.*
+- Preuve 28 px : Il les suit depuis votre boîte mail et relance au bon moment. Vous validez.
 
-## 5/5 — offre (même style que la couverture, pas de look pub)
+## 5/5 — offre (même composition que la couverture, quatre traits de couleur à la place des pierres)
 
-- Label `MANDA` · `5 / 5`
-- Titre : **Un seul, ou les trois.**
-- Corps : Le pack complet réunit Max, Zoé et Eli sur un seul tableau de bord. Essai 7 jours.
-- CTA slide : **Sauvegardez ce post, c'est le catalogue.** Dessous : *Offre Fondateur sur manda.run, lien en bio.*
+- Titre : **Choisissez où récupérer votre temps.**
+- Sous-titre serif italique : *Un assistant, ou le pack complet sur un seul tableau de bord. Essai 7 jours.*
+- Ligne finale mono : **Offre Fondateur sur manda.run, lien en bio.**
+- Pas de « sauvegardez », pas de prix, pas de bandeau.
 
 ## Légende
 
@@ -66,6 +67,10 @@ Un assistant : 29 €/mois. Le pack complet Max + Zoé + Eli : 69 €/mois, et 3
 - **G5** ✅ aucun claim RGPD.
 - **G7** ✅ ni « automatisation », ni « plateforme », ni « configurer » en promesse (la couverture dit « rien à configurer », formulation déjà validée sur b5).
 - **ADR-091** ✅ aucun tiret long, aucune flèche.
+
+## Visuels
+
+`../agent-md-framwork/content-factory/output/catalogue-v1/` : `c1-s1.png` à `c1-s5.png` (1856×2304, 4:5), itérations dans `_iterations/`, procédé et QA dans `REPORT.md`. 8 générations Higgsfield (nano_banana_pro 2k), 20 crédits. Écarts au brief assumés : slide 5 garde les quatre pierres (pas de barres de couleur, cohérence de bouclage avec la couverture) et porte la mention « offre fondateur sur manda.run, lien en bio » en pied de page à la place de `manda.run`.
 
 ## Production
 
