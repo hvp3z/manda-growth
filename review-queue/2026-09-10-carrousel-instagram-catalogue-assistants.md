@@ -3,9 +3,9 @@ date: 2026-09-10
 agent: axiom
 type: autre
 sous-type: carrousel-instagram
-statut: pending
+statut: approved
 verdict: "Matthieu 2026-09-10 (via session Axiom) : structure approuvée. Couverture = Max, Zoé, Eli + Leo en « Bientôt » (pas Sage/Iris). Hook = tagline « Déléguez sans recruter. ». Publication lundi 14/09 12h15 puis épinglage (la story Eli tourne jusqu'au 11/09 midi, pas de bruit avant). Visuels : recherche design carrousel demandée AVANT le rendu."
-etape: "VISUELS v2 RENDUS le 10/09 depuis la DA du site, zéro génération (content-factory/output/catalogue-v2/c1-s1..s5.png, REPORT.md) : ronds = coupes minérales canoniques, S5 = fond de la section chiffres + rangée du pack complet de /pricing, mots clés en serif italique vert #0CCD5A ; attend le verdict visuel de Matthieu, puis programmation lundi 14/09 12h15 + épinglage"
+etape: "VISUELS v2 VALIDÉS par Matthieu le 10/09 (DA du site, zéro génération ; retouches : textes ×1,3, ronds couverture ×1,2, slides 1-4 recentrées, pied uniformisé) ; content-factory/output/catalogue-v2/c1-s1..s5.png ; reste : programmation Instagram lundi 14/09 12h15 + épinglage, sur go explicite"
 origine: "remarque de la femme de Matthieu (10/09) : aucune image ne montre ce qui est disponible chez Manda"
 usage: "post ÉPINGLÉ en haut du profil bonjour.manda ; passe avant le carrousel Zoé (2026-09-10-carrousel-instagram-zoe-3-slides.md, parked)"
 recherche: memory/learnings/2026-09-10-instagram-carousel-hooks-cta.md
