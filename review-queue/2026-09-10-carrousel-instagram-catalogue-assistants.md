@@ -40,7 +40,7 @@ recherche: memory/learnings/2026-09-10-instagram-carousel-hooks-cta.md
 - Rôle serif italique 32 px : *vos devis et vos factures.*
 - Preuve 28 px : Il les suit depuis votre boîte mail et relance au bon moment. Vous validez.
 
-## 5/5 — offre (FOND SOMBRE `#0E1912`, logo sombre, **carte horizontale en trois cellules de coupes minérales polies** avec filets de séparation, Leo absent ; décisions Matthieu 10/09 : ne pas répéter la couverture, pierres plus nettes et plus géométriques)
+## 5/5 — offre (FOND SOMBRE `#0E1912`, logo sombre, **bande fine pleine largeur en trois cellules de coupes minérales polies** avec deux filets sable, assemblée par programme, Leo absent ; décisions Matthieu 10/09 : ne pas répéter la couverture, pierres plus nettes et plus géométriques)
 
 - Titre : **Choisissez où récupérer votre temps.**
 - Sous-titre serif italique : *Un assistant, ou le pack complet sur un seul tableau de bord.*
@@ -70,7 +70,7 @@ Un assistant : 29 €/mois. Le pack complet Max + Zoé + Eli : 69 €/mois, et 3
 
 ## Visuels
 
-`../agent-md-framwork/content-factory/output/catalogue-v1/` : `c1-s1.png` à `c1-s5.png` (1856×2304, 4:5), itérations dans `_iterations/`, procédé et QA dans `REPORT.md`. 8 générations Higgsfield (nano_banana_pro 2k), 20 crédits. Revue Matthieu du 10/09 appliquée en v2 : logo « Mmanda » corrigé (SVG canonique posé par programme), noms Max/Zoé/Eli centrés, Leo en dernier sur la couverture et la finale, finale sans « Essai 7 jours », pied `manda.run` partout. Slide 5 refaite sur fond sombre : carte de trois coupes minérales en 4k (Matthieu : pas deux fois le même écran, pierres trop floues en grappe).
+`../agent-md-framwork/content-factory/output/catalogue-v1/` : `c1-s1.png` à `c1-s5.png` (1856×2304, 4:5), itérations dans `_iterations/`, procédé et QA dans `REPORT.md`. 8 générations Higgsfield (nano_banana_pro 2k), 20 crédits. Revue Matthieu du 10/09 appliquée en v2 : logo « Mmanda » corrigé (SVG canonique posé par programme), noms Max/Zoé/Eli centrés, Leo en dernier sur la couverture et la finale, finale sans « Essai 7 jours », pied `manda.run` partout. Slide 5 refaite sur fond sombre : bande fine pleine largeur de trois coupes minérales (textures 4k, assemblage par programme), après trois itérations avec Matthieu (grappe floue, carte trop épaisse).
 
 ## Production
 
