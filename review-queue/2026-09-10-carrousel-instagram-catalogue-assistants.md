@@ -5,7 +5,7 @@ type: autre
 sous-type: carrousel-instagram
 statut: pending
 verdict: "Matthieu 2026-09-10 (via session Axiom) : structure approuvée. Couverture = Max, Zoé, Eli + Leo en « Bientôt » (pas Sage/Iris). Hook = tagline « Déléguez sans recruter. ». Publication lundi 14/09 12h15 puis épinglage (la story Eli tourne jusqu'au 11/09 midi, pas de bruit avant). Visuels : recherche design carrousel demandée AVANT le rendu."
-etape: "VISUELS v2 RENDUS le 10/09 après revue Matthieu (logo canonique par programme, noms centrés, Leo en dernier, finale sans « Essai 7 jours » ni mention offre) (content-factory/output/catalogue-v1/c1-s1..s5.png, REPORT.md) ; attend le verdict visuel de Matthieu, puis programmation lundi 14/09 12h15 + épinglage content-factory (5 slides 4:5, base visuelle b5.png pour la couverture)"
+etape: "VISUELS v2 RENDUS le 10/09 depuis la DA du site, zéro génération (content-factory/output/catalogue-v2/c1-s1..s5.png, REPORT.md) : ronds = coupes minérales canoniques, S5 = fond de la section chiffres + rangée du pack complet de /pricing, mots clés en serif italique vert #0CCD5A ; attend le verdict visuel de Matthieu, puis programmation lundi 14/09 12h15 + épinglage"
 origine: "remarque de la femme de Matthieu (10/09) : aucune image ne montre ce qui est disponible chez Manda"
 usage: "post ÉPINGLÉ en haut du profil bonjour.manda ; passe avant le carrousel Zoé (2026-09-10-carrousel-instagram-zoe-3-slides.md, parked)"
 recherche: memory/learnings/2026-09-10-instagram-carousel-hooks-cta.md
@@ -70,7 +70,9 @@ Un assistant : 29 €/mois. Le pack complet Max + Zoé + Eli : 69 €/mois, et 3
 
 ## Visuels
 
-`../agent-md-framwork/content-factory/output/catalogue-v1/` : `c1-s1.png` à `c1-s5.png` (1856×2304, 4:5), itérations dans `_iterations/`, procédé et QA dans `REPORT.md`. 8 générations Higgsfield (nano_banana_pro 2k), 20 crédits. Revue Matthieu du 10/09 appliquée en v2 : logo « Mmanda » corrigé (SVG canonique posé par programme), noms Max/Zoé/Eli centrés, Leo en dernier sur la couverture et la finale, finale sans « Essai 7 jours », pied `manda.run` partout. Slide 5 refaite sur fond sombre : bande fine pleine largeur de trois coupes minérales (textures 4k, assemblage par programme), après trois itérations avec Matthieu (grappe floue, carte trop épaisse).
+**v2 (10/09, retenue)** : `../agent-md-framwork/content-factory/output/catalogue-v2/` `c1-s1.png` à `c1-s5.png` (2160×2700, 4:5), rendu déterministe `render/catalogue.js` depuis les assets du site (coupes minérales `coupe-*.webp` en rond avec halo d'accent comme sur `/assistants/*`, fond S5 = section « Des chiffres qui parlent aux dirigeants », rangée S5 = tuiles du pack complet de `/pricing`, « prêts. » et « votre temps. » en Instrument Serif italique vert `#0CCD5A` comme « sans recruter »). Décision Matthieu 10/09 : plus d'images générées pour ce carrousel, la DA du site fait foi. 0 crédit.
+
+**v1 (archivée)** : `../agent-md-framwork/content-factory/output/catalogue-v1/` : `c1-s1.png` à `c1-s5.png` (1856×2304, 4:5), itérations dans `_iterations/`, procédé et QA dans `REPORT.md`. 8 générations Higgsfield (nano_banana_pro 2k), 20 crédits. Revue Matthieu du 10/09 appliquée en v2 : logo « Mmanda » corrigé (SVG canonique posé par programme), noms Max/Zoé/Eli centrés, Leo en dernier sur la couverture et la finale, finale sans « Essai 7 jours », pied `manda.run` partout. Slide 5 refaite sur fond sombre : bande fine pleine largeur de trois coupes minérales (textures 4k, assemblage par programme), après trois itérations avec Matthieu (grappe floue, carte trop épaisse).
 
 ## Production
 
