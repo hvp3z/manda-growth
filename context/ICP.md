@@ -1,7 +1,7 @@
 ---
 type: dérivé
-sources: positioning-intel.md (sidecar, section 6 — persona v2) · ADR-052 · ADR-068 · **ADR-090 (vertical garage/carrosserie)** · terrain Davy 25/08 + Yann IDEL 24/08 (sidecar archive)
-sync: 2026-08-26
+sources: positioning-intel.md (sidecar, section 6 — persona v2) · ADR-052 · ADR-068 · **ADR-090 (vertical garage/carrosserie)** · terrain Davy 25/08 + Yann IDEL 24/08 (sidecar archive) · SIG-003 (02/09, BTP)
+sync: 2026-09-10
 règle: ne modifier que via playbooks/resync-context.md
 ---
 
@@ -47,6 +47,10 @@ règle: ne modifier que via playbooks/resync-context.md
 - Angle interdit tant que CP-122/123 ne sont pas livrés : voir GUARDRAILS G10. Angle autorisé : « vos devis et factures suivis et relancés depuis votre boîte mail, sans changer de logiciel ».
 - Canal : réseau direct (intros de Davy), FNA / Mobilians (fédérations MRA), groupes métier ; concurrence IA déjà présente sur la verticale (ne pas nommer).
 - Segment écarté (non validé) : **IDEL** — tiers payant, canal non-mail.
+
+### Déclinaison D (hypothèse, non ouverte) — Artisan du bâtiment dont le conjoint fait l'administratif
+- Origine : SIG-003 (02/09), maçon indépendant, conjointe à temps plein sur l'admin. Ancre de coût la plus forte vue à ce jour (un poste entier).
+- Statut : **entretien terrain avec le couple avant tout** (fiche CRM Notion « Prospects Manda », À contacter, Haute). Aucun contenu ni ciblage BTP tant que H3 (tout passe par la boîte mail pro) n'est pas confirmée. Si confirmée, D devient la transposition de C au bâtiment.
 
 ## Objections types (à désamorcer, jamais ignorer)
 

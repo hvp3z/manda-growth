@@ -1,7 +1,7 @@
 ---
 type: dérivé
 sources: sidecar Axiom (décisions #29/#46/#21/#63, ADR-064/068/082/085/087/089/094, CP-120/120b/121/130 validés) · CNIL B2B · positioning-intel.md
-sync: 2026-09-02
+sync: 2026-09-10
 règle: ne modifier que via playbooks/resync-context.md
 ---
 
@@ -45,7 +45,9 @@ Le copy produit ne porte plus aucune promesse de conformité (CP-117 + CP-119 : 
 ## G4 — Périmètre produit réel (zéro promesse fantôme, ADR-072)
 
 Fonctionnalités mentionnables : tri email · brouillons validés par le client · récap matinal (dire « récap », jamais « digest ») · relances devis/factures N1/N2 auto · **mise en demeure toujours préparée puis VALIDÉE par le client avant envoi** (toute formulation d'envoi auto = défaut bloquant) · publication LinkedIn Zoé (ghostwriter validé) · connexion Gmail/Outlook.
-NON mentionnables : import Google Sheets (retiré, ADR-062 amendé) · Instagram en promesse ferme (gate Meta) · agenda/calendrier (non codé) · toute feature non livrée.
+NON mentionnables : import Google Sheets (retiré, ADR-062 amendé) · agenda/calendrier (non codé) · toute feature non livrée.
+
+**Changement 2026-09-10 (décision Matthieu, session Axiom 35) : Zoé Instagram devient mentionnable.** La gate Meta (ADR-057) n'est pas levée, mais Matthieu onboarde les Fondateurs Instagram **à la main** (ajout comme testeurs) tant qu'elle ne l'est pas. Formulation autorisée : « Zoé garde le fil avec votre communauté Instagram, dans votre ton, rien ne part sans votre accord » (réponses aux commentaires). Toujours interdit : promettre une activation Instagram instantanée en libre-service, et tout ce qui n'est pas livré. Le mot « automatisation » et toute formule de type « sans supervision » restent exclus (G7, ADR-072).
 
 ## G5 — RGPD : la règle des deux niveaux (jamais amalgamés)
 

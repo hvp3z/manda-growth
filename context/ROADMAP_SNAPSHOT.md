@@ -1,7 +1,7 @@
 ---
 type: dérivé
 sources: sidecar Axiom (project-knowledge.md §4/§8, roadmap-backlog.md, ADR-085/087/089)
-sync: 2026-08-27
+sync: 2026-09-10
 règle: resynchronisé par Axiom via playbooks/resync-context.md après chaque session stratégie qui change la donne
 ---
 
@@ -9,7 +9,7 @@ règle: resynchronisé par Axiom via playbooks/resync-context.md après chaque s
 
 ## Vendable aujourd'hui (grille ADR-089 — détail OFFER.md)
 - **Max** (email) — en prod, **29 €/mois** à l'unité. **Lancement Fondateur ouvert le 27/08 (G1 levée)** — bandeau Google « non vérifiée » assumé, fenêtre ≤100 comptes.
-- **Zoé** (LinkedIn & Instagram) — en prod, publication LinkedIn réelle prouvée, **29 €/mois**. Depuis CP-121 (27/08) l'admin est canal-aware : un client LinkedIn-only atterrit sur son admin LinkedIn. Instagram : gate Meta, ne pas promettre.
+- **Zoé** (LinkedIn & Instagram) — en prod, publication LinkedIn réelle prouvée, **29 €/mois**. Depuis CP-121 (27/08) l'admin est canal-aware : un client LinkedIn-only atterrit sur son admin LinkedIn. Instagram : gate Meta non levée, **mais mentionnable depuis le 2026-09-10** (décision Matthieu, onboarding à la main, voir G4).
 - **Eli** (devis, factures & relances) — en prod, **29 €/mois**. Même contrainte #29 pour l'email.
 - **Pack complet Max + Zoé + Eli — 69 €/mois**, **l'offre cible** ; Fondateur = 34,50 €/mois pendant 12 mois, 10 places, packs uniquement.
 - **Premium 129 €** (Leo + multi-comptes Zoé) — affiché, **non souscriptible** tant que Leo-Prospection n'est pas livré.
@@ -33,7 +33,7 @@ règle: resynchronisé par Axiom via playbooks/resync-context.md après chaque s
 - **Leo-Prospection** : passe **derrière** le chantier garage (décision Matthieu 2026-08-26 : non pressé, bloqué #58/#59).
 
 ## Interdits de promesse (rappel — détail GUARDRAILS)
-Leo disponible / daté (G2) · paliers, « à vie », quotas chiffrés, ✗ (G2bis) · conformité e-facture (#21) · Instagram ferme (gate Meta) · Google Sheets (retiré) · agenda (non codé) · activation immédiate (#29) · **IA française / données en Europe (ADR-085 non livrée)**.
+Leo disponible / daté (G2) · paliers, « à vie », quotas chiffrés, ✗ (G2bis) · conformité e-facture (#21) · activation Instagram instantanée en libre-service (gate Meta ; la mention de Zoé Instagram est autorisée depuis le 10/09, G4) · Google Sheets (retiré) · agenda (non codé) · activation immédiate (#29) · **IA française / données en Europe (ADR-085 non livrée)**.
 
 ## Séquence growth décidée (2026-07-28, confirmée 2026-07-31, amendée 2026-08-24)
 ~~Deploy pricing + bascule Stripe LIVE~~ ✅ (26/08) → ~~CP-120 → CP-121~~ ✅ (26–27/08) → **premier post — MAINTENANT** (LinkedIn = Matthieu fondateur · Instagram = compte Manda ; offre Fondateur **sur le pack**, CTA `manda.run/pricing`) → outbound pré-vente **comptables + garages/carrossiers** (kinés suspendus par #62) → CP-122/123 garage → client ops dès le 1er Fondateur. Zéro média payant sans décision Matthieu. *(amendé 2026-08-27)*
