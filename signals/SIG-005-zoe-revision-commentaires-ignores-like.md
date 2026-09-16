@@ -2,7 +2,7 @@
 date: 2026-09-16
 agent: matthieu
 type: produit
-statut: livré (CP-132 revu le 2026-09-16, validated après AC-11 en prod)
+statut: livré (CP-132 validated en prod le 2026-09-16)
 ---
 
 **Constat** : retour à chaud de Quentin (@bourr_, 260k, premier client Créateur, onboardé le jour même en mode révision) après la démo du tableau de bord Zoé Instagram.
